@@ -17,7 +17,7 @@ public class GreetingService {
 
 
     public String getFormalGreeting(String name) {
-        String url = "http://localhost:8080/greeting?name="+name;
+        String url = "http://172.18.0.2:8080/greeting?name="+name;
         return this.restTemplate.getForObject(url, String.class) + "Welcome Back.";
     }
 }
